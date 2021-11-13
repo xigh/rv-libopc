@@ -265,14 +265,6 @@ RV_OP(FEQ_D)
 RV_OP(FEQ_H)
 RV_OP(FEQ_Q)
 
-#if 0
-// Hypervisor
-RV_OP(HFENCE_BVMA)
-RV_OP(HFENCE_GVMA)
-
-// Debug
-RV_OP(DRET)
-
 // Compressed
 RV_OP(C_UNIMP)
 RV_OP(C_ADDI4SPN)
@@ -325,8 +317,15 @@ RV_OP(C_SWSP)
 RV_OP(C_FSWSP)
 RV_OP(C_SDSP)
 
-// Bits
+// Debug
+RV_OP(DRET)
 
+#if 0
+// Hypervisor
+RV_OP(HFENCE_BVMA)
+RV_OP(HFENCE_GVMA)
+
+// Bits
 RV_OP(BMATFLIP)
 RV_OP(CRC32_D)
 RV_OP(CRC32C_D)
